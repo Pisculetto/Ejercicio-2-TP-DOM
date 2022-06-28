@@ -1,3 +1,5 @@
+
+
 let personas = [];
 
 class Persona {
@@ -35,13 +37,12 @@ function mostrarDatos() {
       `);
 }
 
-function mostrarGeneracion() {
+function mostrarGen() {
   if (this.nacimiento >= 1930 && this.nacimiento <= 1948) {
     alert(
       `${this.nombre} pertecene a la generacion Silent Generation. Su rasgo caracteristico: Austeridad.`
     );
   }
-
   if (this.nacimiento >= 1949 && this.nacimiento <= 1968) {
     alert(
       `${this.nombre} pertenece a la generacion Baby boom. Su rasgo caracteristico: Ambicion.`
