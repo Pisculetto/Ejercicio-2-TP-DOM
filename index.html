@@ -15,35 +15,41 @@
             <form>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="Fnombre" placeholder="name" required maxlength="50" minlength="3">
+                    <input type="text" class="form-control" id="Fnombre"  required maxlength="50" minlength="3">
                   </div>  
                   <div class="mb-3">
                     <label for="edad" class="form-label">Edad</label>
-                    <input type="text" class="form-control" id="Fedad" placeholder="age" required maxlength="999" minlength="1">
+                    <input type="number" class="form-control" id="Fedad"required maxlength="999" minlength="1">
                   </div>  
                   <div class="mb-3">
                     <label for="dni" class="form-label">DNI</label>
-                    <input type="text" class="form-control" id="Fdni" placeholder="dni" required maxlength="50" minlength="3">
+                    <input type="text" class="form-control" id="Fdni"required maxlength="50" minlength="3">
                   </div>  
                   <div class="mb-3">
                     <label for="sexo" class="form-label">Sexo</label>
-                    <input type="text" class="form-control" id="Fsexo" placeholder="sexo" required maxlength="1" minlength="1">
+                    <input type="text" class="form-control" id="Fsexo"  required maxlength="1" minlength="1">
                   </div>  
                   <div class="mb-3">
                     <label for="peso" class="form-label">Peso</label>
-                    <input type="text" class="form-control" id="Fpeso" placeholder="peso" required maxlength="10" minlength="2">
+                    <input type="text" class="form-control" id="Fpeso" required maxlength="10" minlength="2">
                   </div> 
                   <div class="mb-3">
                     <label for="altura" class="form-label">Altura</label>
-                    <input type="text" class="form-control" id="Faltura" placeholder="altura" required maxlength="50" minlength="3">
+                    <input type="text" class="form-control" id="Faltura"  required maxlength="50" minlength="3">
                   </div>  
                   <div class="mb-3">
                     <label for="nacimiento" class="form-label">Nacimiento</label>
-                    <input type="text" class="form-control" id="Fnacimiento" placeholder="nacimiento" required maxlength="50" minlength="3">
+                    <input type="date" class="form-control" id="Fnacimiento"  required maxlength="50" minlength="3">
                   </div>   
                 
-                <button type="button" class="btn btn-primary" onclick=crearPersona()>Submit</button>
+                  <button type="button" class="btn btn-primary mb-3" onclick="crearPersona()">Agregar persona</button>
               </form>
+              
+              <div class="container">
+                <button type="button" class="btn btn-success m-3" onclick="mostrarGeneracion()">Ver generación</button>
+                <button type="button" class="btn btn-success m-3" onclick="mayoriaEdad()">Es mayor de edad?</button>
+                <button type="button" class="btn btn-success m-3" onclick="mostrarDatos()">Ver datos</button>
+              </div>
         </section>
     </main>
     
